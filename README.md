@@ -1,7 +1,7 @@
 # Cinema Simulator
 
 This repo simulates waiting times in cinema theatres, and aims to answer the question:
->"What is the optimimum number of employees given some variables." 
+>"What is the optimum number of employees given some variables." 
 
 
 *Based on the realpython.com tutorial 
