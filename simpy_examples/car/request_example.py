@@ -21,7 +21,12 @@ def main():
     bcs = simpy.Resource(env, capacity=2)
 
     for i in range(4):
-        env.process(car(env, 'Car %d' % i, bcs, i * 2, 5))
+        env.process(car(env,
+                        name=f'Car {i}',
+                        bcs=bcs,
+                        driving_time=i * 2,
+                        charge_duration=5
+                        ))
 
     env.run()
 
